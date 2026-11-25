@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111713">
+<title>Flora - 一朵花的时间</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./style.css">
+</head><body><div class="page">
+<header class="topbar"><a class="brand" href="#" aria-label="Flora 首页"><span class="brand-mark" aria-hidden="true">✳</span><span><span class="brand-name">FLORA</span><span class="brand-sub">A FLOWER IN YOUR HAND</span></span></a><div class="connection"><i id="statusDot"></i><span id="topStatus">准备好与你相遇</span></div></header>
+<main class="composition">
+<section class="intro"><p class="eyebrow">A MOMENT OF BLOOM</p><h1>In full<br><em>bloom.</em></h1><p class="copy">一朵花，随着你的指尖<br>慢慢舒展，也慢慢收拢。</p></section>
+<div class="flower-stage"><div class="light-halo" aria-hidden="true"></div><video id="flower" src="./lily-bloom.mp4" playsinline muted preload="auto" aria-label="百合从花苞慢慢绽放的视频"></video><section class="camera-preview" id="cameraCard" aria-label="摄像头预览"><video id="camera" autoplay playsinline muted></video><span id="cameraLabel">等待摄像头</span></section></div>
+<section class="flower-name"><p class="eyebrow">01 / FLOWER STUDY</p><h2>白百合</h2><p>Lilium candidum</p></section>
+</main>
+<footer class="controls"><div class="range-heading"><span>花苞 <small>· CLOSED</small></span><span>盛放 <small>· IN BLOOM</small></span></div>
+<div class="control-row"><input id="progress" type="range" min="0" max="1" step="0.001" value="0" aria-label="花朵开合程度"><div class="gesture-readout"><span>手势状态</span><strong id="gestureValue">等待手势</strong></div><button id="cameraButton" type="button" aria-label="开启摄像头手势识别"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 5h-4l-1.4 2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.6L14 5Z"/><circle cx="12" cy="13" r="3.3"/></svg><span>开启摄像头</span></button></div>
+<div class="footnote"><span>分开拇指与食指，花朵盛开；捏合或握拳，花朵合拢</span><span>也可以拖动进度条</span></div></footer></div><div class="toast" id="toast" role="status"></div><script type="module" src="./app.js"></script></body></html>
